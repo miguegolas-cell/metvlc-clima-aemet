@@ -15,6 +15,9 @@ jobs:
   actualizar-clima:
     runs-on: ubuntu-latest
 
+    env:
+      AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
+
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -30,22 +33,21 @@ jobs:
           pip install -r requirements.txt
 
       - name: Comprobar API Key
-        env:
-          AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
         run: |
           if [ -z "$AEMET_API_KEY" ]; then
             echo "AEMET_API_KEY no está configurada todavía."
-            echo "El workflow queda preparado, pero no se ejecuta la descarga."
-            exit 0
+            echo "El workflow está preparado, pero no se ejecutará la descarga."
+          else
+            echo "AEMET_API_KEY configurada correctamente."
           fi
 
       - name: Generar visor climático AEMET
-        env:
-          AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
+        if: env.AEMET_API_KEY != ''
         run: |
           python scripts/aemet_mes_en_curso_vs_normal.py
 
       - name: Publicar cambios generados
+        if: env.AEMET_API_KEY != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
