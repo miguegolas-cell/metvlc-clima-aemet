@@ -44,7 +44,7 @@ jobs:
       - name: Generar visor climático AEMET
         if: env.AEMET_API_KEY != ''
         run: |
-          python scripts/aemet_mes_en_curso_vs_normal.py
+          python scripts/aemet_mes_en_curso_vs_normal.py --estaciones 8416,8293X
 
       - name: Publicar cambios generados
         if: env.AEMET_API_KEY != ''
