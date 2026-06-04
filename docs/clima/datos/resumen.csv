@@ -1,7 +1,7 @@
 ﻿estacion,nombre,variable,titulo,unidad,estado,mensaje,normal,observado,diferencia,dias,ultimo_dia,grafico
 8416,València,tmed,Temperatura media,°C,sin_datos,AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.,,,,,,
-8416,València,tmax,Temperatura máxima media,°C,ok,ok,24.0,25.283870967741937,1.2838709677419367,31,2026-05-31,graficos/8416_tmax_202605.png
-8416,València,hr,Humedad relativa media,%,ok,ok,66.0,59.45161290322581,-6.548387096774192,31,2026-05-31,graficos/8416_hr_202605.png
-8293X,Xàtiva,tmed,Temperatura media,°C,ok,ok,20.0,20.429032258064517,0.4290322580645167,31,2026-05-31,graficos/8293X_tmed_202605.png
-8293X,Xàtiva,tmax,Temperatura máxima media,°C,ok,ok,27.4,27.729032258064517,0.32903225806451886,31,2026-05-31,graficos/8293X_tmax_202605.png
-8293X,Xàtiva,hr,Humedad relativa media,%,sin_datos,no encuentro normal para el mes 5,,,,,,
+8416,València,tmax,Temperatura máxima media,°C,sin_datos,AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.,,,,,,
+8416,València,hr,Humedad relativa media,%,sin_datos,AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.,,,,,,
+8293X,Xàtiva,tmed,Temperatura media,°C,sin_datos,AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.,,,,,,
+8293X,Xàtiva,tmax,Temperatura máxima media,°C,sin_datos,AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.,,,,,,
+8293X,Xàtiva,hr,Humedad relativa media,%,sin_datos,AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.,,,,,,
