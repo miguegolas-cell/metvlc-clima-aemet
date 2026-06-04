@@ -1,1 +1,3 @@
-﻿estacion,nombre,variable,anio,mes,fecha_iso,dia,valor
+﻿estacion,nombre,variable,fecha,dia,valor
+8416,València,tmed,2026-06-01,1,23.9
+8293X,Xàtiva,tmed,2026-06-01,1,24.6

@@ -1,8 +1,12 @@
 {
-  "actualizado": "2026-06-04T23:28:10.096656+02:00",
-  "fecha_referencia": "2026-06-04",
+  "generado": "2026-06-04T23:59:28.194829+02:00",
+  "periodo": {
+    "anio": 2026,
+    "mes": 6,
+    "mes_nombre": "Junio"
+  },
   "fuente": "AEMET OpenData",
-  "nota": "Media histórica propia calculada con climatologías mensuales/anuales de años anteriores; no es normal climática oficial.",
+  "referencia": "Normal climática oficial AEMET 1991-2020",
   "resultados": [
     {
       "estacion": "8416",
@@ -12,16 +16,14 @@
       "unidad": "°C",
       "anio_actual": 2026,
       "mes": 6,
-      "estado": "sin_datos",
-      "mensaje": "Respuesta inesperada de AEMET: {'descripcion': 'El rango de las fechas no puede ser superior a 36 mesess', 'estado': 404}",
-      "media_actual": null,
-      "media_historica": null,
-      "diferencia": null,
-      "dias_actual": null,
-      "ultimo_dia_actual": null,
-      "anios_historicos_usados": null,
-      "periodo_historico": null,
-      "grafico": null
+      "estado": "ok",
+      "mensaje": "ok",
+      "media_actual": 23.9,
+      "normal_1991_2020": 23.3,
+      "diferencia": 0.6,
+      "dias_actual": 1,
+      "ultimo_dia_actual": "2026-06-01",
+      "grafico": "graficos/8416_tmed_202606_normal_1991_2020.png"
     },
     {
       "estacion": "8293X",
@@ -31,18 +33,50 @@
       "unidad": "°C",
       "anio_actual": 2026,
       "mes": 6,
-      "estado": "sin_datos",
-      "mensaje": "Respuesta inesperada de AEMET: {'descripcion': 'El rango de las fechas no puede ser superior a 36 mesess', 'estado': 404}",
-      "media_actual": null,
-      "media_historica": null,
-      "diferencia": null,
-      "dias_actual": null,
-      "ultimo_dia_actual": null,
-      "anios_historicos_usados": null,
-      "periodo_historico": null,
-      "grafico": null
+      "estado": "ok",
+      "mensaje": "ok",
+      "media_actual": 24.6,
+      "normal_1991_2020": 24.5,
+      "diferencia": 0.1,
+      "dias_actual": 1,
+      "ultimo_dia_actual": "2026-06-01",
+      "grafico": "graficos/8293X_tmed_202606_normal_1991_2020.png"
     }
   ],
-  "historico_mensual": [],
-  "diarios_actuales": []
+  "diarios_actual": [
+    {
+      "estacion": "8416",
+      "nombre": "València",
+      "variable": "tmed",
+      "fecha": "2026-06-01",
+      "dia": 1,
+      "valor": 23.9
+    },
+    {
+      "estacion": "8293X",
+      "nombre": "Xàtiva",
+      "variable": "tmed",
+      "fecha": "2026-06-01",
+      "dia": 1,
+      "valor": 24.6
+    }
+  ],
+  "normales": [
+    {
+      "estacion": "8416",
+      "nombre": "València",
+      "variable": "tmed",
+      "mes": 6,
+      "mes_nombre": "Junio",
+      "normal_1991_2020": 23.3
+    },
+    {
+      "estacion": "8293X",
+      "nombre": "Xàtiva",
+      "variable": "tmed",
+      "mes": 6,
+      "mes_nombre": "Junio",
+      "normal_1991_2020": 24.5
+    }
+  ]
 }
