@@ -106,40 +106,89 @@ VARIABLES = {
         "unidad": "°C",
         "calculo": "media",
         "diario": [
-            "tmed", "temperatura_media", "temp_media", "temperatura media",
+            "tmed",
+            "temperatura_media",
+            "temp_media",
+            "temperatura media",
         ],
         "normal": [
-            "tmed", "temperatura_media", "temp_media", "temperatura media",
+            # Nombre habitual en normales climáticas AEMET
+            "tm_mes_md",
+
+            # Alternativas defensivas
+            "tmed",
+            "temperatura_media",
+            "temp_media",
+            "temperatura media",
+            "temperatura_media_mensual",
+            "media_temperatura_media",
         ],
     },
+
     "tmax": {
         "titulo": "Temperatura máxima media",
         "unidad": "°C",
         "calculo": "media",
         "diario": [
-            "tmax", "temperatura_maxima", "temperatura_máxima", "temp_max", "maxima", "máxima",
+            "tmax",
+            "temperatura_maxima",
+            "temperatura_máxima",
+            "temp_max",
+            "maxima",
+            "máxima",
         ],
         "normal": [
-            "tmax", "temperatura_maxima_media", "temperatura_máxima_media",
-            "media_temperaturas_maximas", "media_temperaturas_máximas",
-            "temperatura_maxima", "temperatura_máxima", "temp_max",
+            # Nombre habitual en normales climáticas AEMET
+            "tm_max_md",
+
+            # Alternativas defensivas
+            "tmax",
+            "temperatura_maxima_media",
+            "temperatura_máxima_media",
+            "media_temperaturas_maximas",
+            "media_temperaturas_máximas",
+            "temperatura_maxima",
+            "temperatura_máxima",
+            "temp_max",
+            "maxima_media",
+            "máxima_media",
         ],
     },
+
     "hr": {
         "titulo": "Humedad relativa media",
         "unidad": "%",
         "calculo": "media",
         "diario": [
-            "hrmedia", "hr_media", "hrmed", "hr_med", "hr", "humedad_relativa_media",
-            "humedad media", "humedad_media", "humedad_relativa", "humedad",
+            "hrmedia",
+            "hr_media",
+            "hrmed",
+            "hr_med",
+            "hr",
+            "humedad_relativa_media",
+            "humedad media",
+            "humedad_media",
+            "humedad_relativa",
+            "humedad",
         ],
         "normal": [
-            "hrmedia", "hr_media", "hrmed", "hr_med", "hr", "humedad_relativa_media",
-            "humedad media", "humedad_media", "humedad_relativa", "humedad",
+            # Nombre habitual en normales climáticas AEMET
+            "hr_md",
+
+            # Alternativas defensivas
+            "hrmedia",
+            "hr_media",
+            "hrmed",
+            "hr_med",
+            "hr",
+            "humedad_relativa_media",
+            "humedad media",
+            "humedad_media",
+            "humedad_relativa",
+            "humedad",
         ],
     },
 }
-
 
 class AemetError(RuntimeError):
     pass
