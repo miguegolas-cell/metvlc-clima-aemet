@@ -3,134 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AEMET · Mes en curso vs normal · Mayo 2026</title>
+<title>AEMET · Evolución diaria vs media histórica · Junio 2026</title>
 <style>
     :root { color-scheme: light; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #1f2933;
-    }
-    .wrap {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 18px;
-    }
-    .cabecera {
-      background: linear-gradient(135deg, #263544, #516575);
-      color: white;
-      border-radius: 18px;
-      padding: 20px;
-      margin-bottom: 18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,.12);
-    }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f6f8; color: #1f2933; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 18px; }
+    .cabecera { background: linear-gradient(135deg, #263544, #516575); color: white; border-radius: 18px; padding: 20px; margin-bottom: 18px; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
     .cabecera h1 { margin: 0 0 8px 0; font-size: 26px; }
-    .cabecera p { margin: 4px 0; opacity: .95; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 16px;
-    }
-    .estacion {
-      background: white;
-      border-radius: 18px;
-      padding: 16px;
-      box-shadow: 0 6px 18px rgba(0,0,0,.08);
-    }
-    .estacion h2 {
-      margin: 0 0 12px 0;
-      font-size: 20px;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 8px;
-    }
-    .codigo { color: #64748b; font-size: 14px; font-weight: normal; }
-    .variable {
-      border: 1px solid #e5e7eb;
-      border-radius: 14px;
-      margin: 12px 0;
-      padding: 12px;
-      background: #fbfdff;
-    }
+    .cabecera p { margin: 4px 0; opacity: .95; line-height: 1.45; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; }
+    .estacion { background: white; border-radius: 18px; padding: 16px; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+    .estacion h2 { margin: 0 0 12px 0; font-size: 20px; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }
+    .codigo { color: #64748b; font-size: 13px; font-weight: normal; }
+    .variable { border: 1px solid #e5e7eb; border-radius: 14px; margin: 12px 0; padding: 12px; background: #fbfdff; }
     .variable h3 { margin: 0 0 8px 0; font-size: 16px; }
-    .datos {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 10px;
-      font-size: 13px;
-    }
-    .dato {
-      background: #eef2f6;
-      border-radius: 10px;
-      padding: 8px;
-      text-align: center;
-    }
-    .dato strong { display: block; font-size: 16px; margin-bottom: 2px; }
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      border: 1px solid #e5e7eb;
-      background: white;
-    }
-    .sin-datos {
-      color: #9a3412;
-      background: #fff7ed;
-      border: 1px solid #fed7aa;
-      border-radius: 12px;
-      padding: 10px;
-      font-size: 13px;
-    }
-    .pie {
-      margin: 18px 0 0 0;
-      color: #64748b;
-      font-size: 13px;
-      text-align: center;
-    }
+    .datos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 10px; font-size: 13px; }
+    .dato { background: #eef2f6; border-radius: 10px; padding: 8px; text-align: center; }
+    .dato strong { display: block; font-size: 17px; margin-bottom: 2px; color: #172033; }
+    img { width: 100%; height: auto; border-radius: 12px; border: 1px solid #e5e7eb; background: white; }
+    .aviso { color: #9a3412; background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 10px; font-size: 13px; }
+    .pie { margin: 18px 0 0 0; color: #64748b; font-size: 13px; text-align: center; line-height: 1.45; }
+    @media (max-width: 640px) { .datos { grid-template-columns: 1fr; } .cabecera h1 { font-size: 22px; } }
     </style>
 </head>
 <body>
 <div class="wrap">
 <section class="cabecera">
-<h1>AEMET · Mes en curso frente a normal climática</h1>
-<p><strong>Periodo:</strong> Mayo 2026</p>
-<p><strong>Variables:</strong> Temperatura media, Temperatura máxima media, Humedad relativa media</p>
-<p><strong>Actualización del visor:</strong> 04/06/2026 18:32</p>
+<h1>AEMET · Evolución diaria frente a media mensual histórica</h1>
+<p><strong>Periodo actual:</strong> Junio 2026, hasta el último día disponible en AEMET.</p>
+<p><strong>Comparación:</strong> media mensual del mismo mes calculada con años anteriores al año actual.</p>
+<p><strong>Variables:</strong> Temperatura media mensual</p>
+<p><strong>Actualización del visor:</strong> 04/06/2026 23:28</p>
 </section>
 <main class="grid">
 <section class="estacion">
 <h2>València <span class='codigo'>8416</span></h2>
 <article class="variable">
-<h3>Temperatura media</h3>
-<div class='sin-datos'>Sin datos suficientes. AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.</div>
-</article>
-<article class="variable">
-<h3>Temperatura máxima media</h3>
-<div class='sin-datos'>Sin datos suficientes. AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.</div>
-</article>
-<article class="variable">
-<h3>Humedad relativa media</h3>
-<div class='sin-datos'>Sin datos suficientes. AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.</div>
+<h3>Temperatura media mensual</h3>
+<div class='aviso'>Sin datos suficientes. Respuesta inesperada de AEMET: {&#x27;descripcion&#x27;: &#x27;El rango de las fechas no puede ser superior a 36 mesess&#x27;, &#x27;estado&#x27;: 404}</div>
 </article>
 </section>
 <section class="estacion">
 <h2>Xàtiva <span class='codigo'>8293X</span></h2>
 <article class="variable">
-<h3>Temperatura media</h3>
-<div class='sin-datos'>Sin datos suficientes. AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.</div>
-</article>
-<article class="variable">
-<h3>Temperatura máxima media</h3>
-<div class='sin-datos'>Sin datos suficientes. AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.</div>
-</article>
-<article class="variable">
-<h3>Humedad relativa media</h3>
-<div class='sin-datos'>Sin datos suficientes. AEMET devuelve 429: demasiadas peticiones. Espera un poco y vuelve a ejecutar.</div>
+<h3>Temperatura media mensual</h3>
+<div class='aviso'>Sin datos suficientes. Respuesta inesperada de AEMET: {&#x27;descripcion&#x27;: &#x27;El rango de las fechas no puede ser superior a 36 mesess&#x27;, &#x27;estado&#x27;: 404}</div>
 </article>
 </section>
 </main>
-<p class="pie">Fuente: AEMET OpenData. Elaboración automática para seguimiento del mes en curso.</p>
+<p class="pie">Fuente: AEMET OpenData. Elaboración automática. La media histórica mostrada es una media propia calculada con climatologías mensuales/anuales de años anteriores; no es una normal climática oficial.</p>
 </div>
 </body>
 </html>

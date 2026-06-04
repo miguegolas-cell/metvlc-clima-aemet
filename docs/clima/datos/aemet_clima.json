@@ -1,0 +1,48 @@
+{
+  "actualizado": "2026-06-04T23:28:10.096656+02:00",
+  "fecha_referencia": "2026-06-04",
+  "fuente": "AEMET OpenData",
+  "nota": "Media histórica propia calculada con climatologías mensuales/anuales de años anteriores; no es normal climática oficial.",
+  "resultados": [
+    {
+      "estacion": "8416",
+      "nombre": "València",
+      "variable": "tmed",
+      "titulo": "Temperatura media mensual",
+      "unidad": "°C",
+      "anio_actual": 2026,
+      "mes": 6,
+      "estado": "sin_datos",
+      "mensaje": "Respuesta inesperada de AEMET: {'descripcion': 'El rango de las fechas no puede ser superior a 36 mesess', 'estado': 404}",
+      "media_actual": null,
+      "media_historica": null,
+      "diferencia": null,
+      "dias_actual": null,
+      "ultimo_dia_actual": null,
+      "anios_historicos_usados": null,
+      "periodo_historico": null,
+      "grafico": null
+    },
+    {
+      "estacion": "8293X",
+      "nombre": "Xàtiva",
+      "variable": "tmed",
+      "titulo": "Temperatura media mensual",
+      "unidad": "°C",
+      "anio_actual": 2026,
+      "mes": 6,
+      "estado": "sin_datos",
+      "mensaje": "Respuesta inesperada de AEMET: {'descripcion': 'El rango de las fechas no puede ser superior a 36 mesess', 'estado': 404}",
+      "media_actual": null,
+      "media_historica": null,
+      "diferencia": null,
+      "dias_actual": null,
+      "ultimo_dia_actual": null,
+      "anios_historicos_usados": null,
+      "periodo_historico": null,
+      "grafico": null
+    }
+  ],
+  "historico_mensual": [],
+  "diarios_actuales": []
+}
