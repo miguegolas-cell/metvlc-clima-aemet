@@ -768,7 +768,7 @@ def generar_index_html(resultados: list[ResultadoVariable], salida: Path, fecha_
                 signo = "+" if (r.diferencia or 0) >= 0 else ""
                 partes.append('<div class="datos">')
                 partes.append(f"<div class='dato'><strong>{r.media_actual:.1f}</strong>Media actual {unidad}</div>")
-                partes.append(f"<div class='dato'><strong>{r.normal_1991_2020:.1f}</strong>Normal 1991-2020 {unit}</div>".replace("{unit}", unidad))
+                partes.append(f"<div class='dato'><strong>{r.normal_1991_2020:.1f}</strong>Normal 1991-2020 {unidad}</div>")
                 partes.append(f"<div class='dato'><strong>{signo}{r.diferencia:.1f}</strong>Anomalía {unidad}</div>")
                 partes.append("</div>")
                 partes.append(f"<img src='{html.escape(r.grafico or '')}' alt='{html.escape(r.titulo)} en {html.escape(nombre)}'>")
