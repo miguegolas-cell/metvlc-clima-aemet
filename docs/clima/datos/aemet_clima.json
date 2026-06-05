@@ -1,5 +1,5 @@
 {
-  "generado": "2026-06-04T23:59:28.194829+02:00",
+  "generado": "2026-06-05T19:30:13.584748+02:00",
   "periodo": {
     "anio": 2026,
     "mes": 6,
@@ -18,11 +18,11 @@
       "mes": 6,
       "estado": "ok",
       "mensaje": "ok",
-      "media_actual": 23.9,
+      "media_actual": 23.95,
       "normal_1991_2020": 23.3,
-      "diferencia": 0.6,
-      "dias_actual": 1,
-      "ultimo_dia_actual": "2026-06-01",
+      "diferencia": 0.65,
+      "dias_actual": 2,
+      "ultimo_dia_actual": "2026-06-02",
       "grafico": "graficos/8416_tmed_202606_normal_1991_2020.png"
     },
     {
@@ -35,11 +35,11 @@
       "mes": 6,
       "estado": "ok",
       "mensaje": "ok",
-      "media_actual": 24.6,
+      "media_actual": 26.0,
       "normal_1991_2020": 24.5,
-      "diferencia": 0.1,
-      "dias_actual": 1,
-      "ultimo_dia_actual": "2026-06-01",
+      "diferencia": 1.5,
+      "dias_actual": 2,
+      "ultimo_dia_actual": "2026-06-02",
       "grafico": "graficos/8293X_tmed_202606_normal_1991_2020.png"
     }
   ],
@@ -53,12 +53,28 @@
       "valor": 23.9
     },
     {
+      "estacion": "8416",
+      "nombre": "València",
+      "variable": "tmed",
+      "fecha": "2026-06-02",
+      "dia": 2,
+      "valor": 24.0
+    },
+    {
       "estacion": "8293X",
       "nombre": "Xàtiva",
       "variable": "tmed",
       "fecha": "2026-06-01",
       "dia": 1,
       "valor": 24.6
+    },
+    {
+      "estacion": "8293X",
+      "nombre": "Xàtiva",
+      "variable": "tmed",
+      "fecha": "2026-06-02",
+      "dia": 2,
+      "valor": 27.4
     }
   ],
   "normales": [
